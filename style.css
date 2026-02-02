@@ -1,5 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --grey_500: hsl(234, 12%, 34%);
+  --grey_400: hsl(212, 6%, 44%);
+  --white: hsl(0, 0%, 98%);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+}
+
+main {
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: var(--grey_400);
+  font-size: 24px;
+}
+
+header h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--grey_500);
+  font-size: 24px;
+}
+
+main p.description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--grey_400);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 25vh;
+  margin-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  border-radius: 10px;
+}
+
+section span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--grey_500);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--grey_400);
+}
+
+.supervisor {
+  box-shadow:
+    0px -4px 0px 0px var(--cyan),
+    2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.team-builder {
+  box-shadow:
+    0px -4px 0px 0px var(--red),
+    2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.karma {
+  box-shadow:
+    0px -4px 0px 0px var(--orange),
+    2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.calculator {
+  box-shadow:
+    0px -4px 0px 0px var(--blue),
+    2px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
