@@ -50,14 +50,14 @@ main p.description {
   font-size: 15px;
   color: var(--grey_400);
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
-section {
+article {
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 25vh;
+  height: 30vh;
   margin-bottom: 25px;
   padding-left: 30px;
   padding-right: 30px;
@@ -65,7 +65,7 @@ section {
   border-radius: 10px;
 }
 
-section span {
+article span {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: var(--grey_500);
@@ -73,11 +73,17 @@ section span {
   margin-bottom: 10px;
 }
 
-section p {
+article p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   color: var(--grey_400);
+  margin-bottom: 30px;
+}
+
+article img {
+  width: 60px;
+  margin-left: 80%;
 }
 
 .supervisor {
@@ -102,4 +108,45 @@ section p {
   box-shadow:
     0px -4px 0px 0px var(--blue),
     2px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    text-align: center;
+  }
+
+  header h2 {
+    font-size: 32px;
+  }
+
+  header h3 {
+    font-size: 32px;
+  }
+
+  main p.description {
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
+  div.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  article {
+    margin-bottom: 50px;
+    width: 400px;
+    text-align: left;
+  }
+
+  article p {
+    margin-right: 20%;
+  }
+
+  article img {
+    margin-top: 5%;
+  }
 }
