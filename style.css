@@ -110,7 +110,7 @@ article img {
     2px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1600px) {
   main {
     text-align: center;
   }
